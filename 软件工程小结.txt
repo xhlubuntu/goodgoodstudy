@@ -13,6 +13,7 @@ API
   docker k8s gitlab jenkins docker-registry(harbor)
   
   在K8S中跑CI，大致流程
+    用eclipse/intelij等编写代码,将代码上传至gitlab
     Jenkins将Gitlab代码打包成Image
     Push到Docker Registry中
     Jenkins通过yaml文件部署应用
