@@ -45,7 +45,7 @@ engeneering
     numpy pandas sklearn matplotlib/plotly/seaborn
     sklearn-contrib(category_encoders imblearn hdbscan) faiss skopt pandaql
     xgboost lightgbm catboost
-    tensorflow keras
+    tensorflow keras tf-serving
     jieba nltk gensim
   extend python
     cython swig
