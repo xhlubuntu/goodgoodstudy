@@ -2,7 +2,11 @@
 面向对象开发
     参考sklearn的实现方式(sklearn.base.Estimator sklearn.base.TransformerMixin sklearn.pipeline.Pipeline etc.)
     tf.estimator tf.dataset tf.feature_column
-    
+
+API
+  restful
+  graphql
+
 设计模式
 
 持续集成
