@@ -4,7 +4,7 @@
     tf.estimator tf.dataset tf.feature_column
 
 API
-  restful
+  restful/rpc
   graphql
 
 设计模式
