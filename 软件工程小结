@@ -1,0 +1,17 @@
+
+面向对象开发
+    参考sklearn的实现方式(sklearn.base.Estimator sklearn.base.TransformerMixin sklearn.pipeline.Pipeline etc.)
+    tf.estimator tf.dataset tf.feature_column
+    
+设计模式
+
+持续集成
+  docker k8s gitlab jenkins docker-registry(harbor)
+  
+  在K8S中跑CI，大致流程
+    Jenkins将Gitlab代码打包成Image
+    Push到Docker Registry中
+    Jenkins通过yaml文件部署应用
+    Pod的Image从Docker Registry中Pull
+
+
