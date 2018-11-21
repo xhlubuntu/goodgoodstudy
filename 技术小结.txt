@@ -1,0 +1,58 @@
+
+特征工程
+  特征衍生
+    业务特征  特征组合 gbdt/deeplearning
+  离散特征、连续特征
+    onehot minmax zscore binning(最优分箱子)
+  特征选择
+    IV、chisq、相关性系数
+机器/深度学习算法
+  分类/回归 聚类 降维
+图算法
+  A*
+  最短路/生成树
+  中心度/相似度
+  社区发现/连通分支
+
+深度学习模型
+  regression
+  classification
+    structured data
+    image
+    text
+  cluster
+  dimension reduction
+  seq2seq
+  word embedding
+
+end2end machine learning system
+  tensorflow estimator api
+    tf.estimator tf.dataset tf.feature_column
+  spark
+    pipeline
+  sklearn(>=0.20)
+    pipeline.Pipeline compose.ColumnTransformer
+    externals.joblib
+
+engeneering
+  hadoop hive spark k8s docker
+  graph database
+    neo4j graphx spark-graphframe
+    visualization: D3.js,echarts
+  server
+    flask-restful
+  python libraries
+    numpy pandas sklearn matplotlib/plotly/seaborn
+    sklearn-contrib(category_encoders imblearn hdbscan) faiss skopt pandaql
+    xgboost lightgbm catboost
+    tensorflow keras
+    jieba nltk gensim
+  extend python
+    cython swig
+  
+data format
+    tabular
+    image
+    text
+    sequence
+    
