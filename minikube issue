@@ -1,30 +1,46 @@
 
 
-minikube with proxy
+minikube安装
+  minikube.exe
+  kubectl.exe
 
-  https://github.com/kubernetes/minikube/issues/530
-  try 
-    minikube delete and rerun minikube
+minikube问题解决
 
-failed create pod sandbox
-  http://anoyi.com/p/73a92cddadd5
+pod 一直处于containerCreating状态
+1.如果docker pull不了镜像
+  minikube delete
+  rm -rf ~/.minikube
+  重启minikube
 
-minikube 创建pod一直处于containerCreating状态
-  https://www.jianshu.com/p/73a92cddadd5
-  
-  https://www.jianshu.com/p/a552076d4fe3
-  1.讨论
-    https://github.com/kubernetes/kubernetes/issues/7090
-    https://github.com/kubernetes/kubernetes/issues/6888
-    https://github.com/kubernetes/kubernetes/issues/26873
-  
-  2.
-    修改pod-infra-container-image参数
-    https://github.com/kubernetes/minikube/issues/473
-    
-  3.
-    1) 想办法在一台机器上拉取gcr.io/google_containers/pause-amd64:3.0
-    2) 拉取成功后在通过打tag推送到私有仓库中
-    3) minikube ssh登录到minikube节点中
-    4) docker login , docker pull镜像后，重新tag成gcr.io/google_containers/pause-amd64:3.0
+2.基础镜像被墙，下载不了
+http://anoyi.com/p/73a92cddadd5
 
+查看问题，可能版本问题
+docker tag k8s.gcr.io/kube-addon-manager:v8.6 gcr.io/google-containers/kube-addon-manager:v6.5
+
+
+3.检查是否有用
+
+kubectl run hello-minikube --image=kennship/http-echo --port=3000 --image-pull-policy=IfNotPresent 
+kubectl expose deployment hello-minikube --type=NodePort 
+
+kubectl get pods
+kubectl get deployment
+kubectl get svc
+
+kubectl delete service hello-minikube
+kubectl delete deployment hello-minikube
+
+kubectl describe pod hello-minikube-869fdbcfb8-fp6c2
+
+4.使用代理 
+$ export http_proxy="http://127.0.0.1:1080"
+$ export https_proxy="http://127.0.0.1:1080"
+
+# For Kubernetes
+$ export no_proxy=192.168.99.102
+$ minikube start --docker-env HTTP_PROXY=$http_proxy --docker-env HTTPS_PROXY=$https_proxy
+
+# 启动集群后，还要再特别忽略集群节点的代理
+$ export no_proxy=$no_proxy,$(minikube ip)
+$ export NO_PROXY=$no_proxy,$(minikube ip)
