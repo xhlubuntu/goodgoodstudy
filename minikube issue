@@ -1,0 +1,20 @@
+
+
+minikube 创建pod一直处于containerCreating状态
+
+https://www.jianshu.com/p/a552076d4fe3
+1.讨论
+  https://github.com/kubernetes/kubernetes/issues/7090
+  https://github.com/kubernetes/kubernetes/issues/6888
+  https://github.com/kubernetes/kubernetes/issues/26873
+
+2.
+  修改pod-infra-container-image参数
+  https://github.com/kubernetes/minikube/issues/473
+  
+3.
+  1) 想办法在一台机器上拉取gcr.io/google_containers/pause-amd64:3.0
+  2) 拉取成功后在通过打tag推送到私有仓库中
+  3) minikube ssh登录到minikube节点中
+  4) docker login , docker pull镜像后，重新tag成gcr.io/google_containers/pause-amd64:3.0
+
