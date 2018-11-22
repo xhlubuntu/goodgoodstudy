@@ -2,6 +2,8 @@
 
 minikube 创建pod一直处于containerCreating状态
 
+https://www.jianshu.com/p/73a92cddadd5
+
 https://www.jianshu.com/p/a552076d4fe3
 1.讨论
   https://github.com/kubernetes/kubernetes/issues/7090
