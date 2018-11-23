@@ -15,6 +15,13 @@ pod 一直处于containerCreating状态
 2.基础镜像被墙，下载不了
 http://anoyi.com/p/73a92cddadd5
 
+查看minikube插件
+minikube addons list
+查看插件的服务
+kubectl get pods,services -n kube-system
+服务没有启动的原因
+kubectl get events -n kube-system
+
 查看问题，可能版本问题
 docker tag k8s.gcr.io/kube-addon-manager:v8.6 gcr.io/google-containers/kube-addon-manager:v6.5
 
