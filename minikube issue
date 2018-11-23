@@ -1,4 +1,12 @@
 
+docker 
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 192.168.99.101 is not in the cert's list: 192.168.99.102"
+docker-machine regenerate-certs default
+
+docker-credential-wincred not installed or not available in path
+Im using Window 10, from ~/.docker/config.json
+I just remove the "credsStore": "wincred" and it work for me.
+
 
 minikube安装
   minikube.exe
