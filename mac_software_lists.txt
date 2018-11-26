@@ -23,7 +23,28 @@ mac software lists
       tensorflow keras
       flask flask_restful graphene graphql
     r rstudio
-  
+
+
+工作环境
+  公司内 外部
+  环境：生产环境 开发、测试环境 办公环境
+  语言 软件 集群
+  各种系统的账号密码
+  系统之间的连接方式 数据流动 工具
+  目录结构清晰
+    workdir
+      projects
+      books
+      codes
+      gits
+      
+工作内容和职责
+  产品 场景 预期达到的效果
+  需求word 过程code 展示ppt
+  沟通
+工作方式
+  个人 协作
+  项目架构图
     
   
 
