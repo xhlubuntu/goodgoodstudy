@@ -6,6 +6,8 @@ mac software lists
     shadowsock
     wechat
     xcode brew
+    xmid
+    office
   虚拟机
     docker virtualbox minikube kubectl
   开发环境
