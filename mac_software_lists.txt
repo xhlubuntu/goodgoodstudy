@@ -8,6 +8,7 @@ mac software lists
     xcode brew
     xmind
     office
+    印象笔记
   系统软件
     jvm gcc
   虚拟机
