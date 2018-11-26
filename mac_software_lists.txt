@@ -5,6 +5,7 @@ mac software lists
     chrome (notepad++)sublime vim git
     shadowsock
     wechat
+    xcode
   虚拟机
     docker virtualbox minikube kubectl
   开发环境
