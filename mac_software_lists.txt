@@ -8,8 +8,12 @@ mac software lists
     xcode brew
     xmind
     office
+  系统软件
+    jvm gcc
   虚拟机
     docker virtualbox minikube kubectl
+    虚拟机中需要的软件
+      neo4j mysql redis spark
   开发环境
     xgboost lightgbm
     intelij maven 
