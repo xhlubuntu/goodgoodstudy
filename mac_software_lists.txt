@@ -1,0 +1,22 @@
+
+
+mac software lists
+  基础软件
+    chrome (notepad++)sublime vim git
+    shadowsock
+    wechat
+  虚拟机
+    docker virtualbox minikube kubectl
+  开发环境
+    xgboost lightgbm
+    intelij maven 
+    pycharm anaconda jupyter python
+      numpy scipy pandas pandasql matplotlib seanborn sklearn skopt categorical_encoders hdbscan
+      jieba nltk gensim 
+      tensorflow keras
+      flask flask_restful graphene graphql
+    r rstudio
+  
+    
+  
+
