@@ -3,6 +3,10 @@
     参考sklearn的实现方式(sklearn.base.Estimator sklearn.base.TransformerMixin sklearn.pipeline.Pipeline etc.)
     tf.estimator tf.dataset tf.feature_column
 
+机器学习服务
+    tf-serving
+    pmml
+    pipeline+restful
 
 网络通信
   API
