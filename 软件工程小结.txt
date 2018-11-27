@@ -3,9 +3,15 @@
     参考sklearn的实现方式(sklearn.base.Estimator sklearn.base.TransformerMixin sklearn.pipeline.Pipeline etc.)
     tf.estimator tf.dataset tf.feature_column
 
-API
-  restful/rpc
-  graphql
+
+网络通信
+  API
+    restful/rpc
+    graphql
+  前端
+    node.js react/angualr
+  后端
+    node.js springboot(性能要求比较高的时候选用) flask_restful(开发速度快)
 
 设计模式
 
@@ -19,4 +25,29 @@ API
     Jenkins通过yaml文件部署应用
     Pod的Image从Docker Registry中Pull
 
+
+apache airflow 
+  python 任务调度框架
+
+apache beam 
+  同一的大数据处理框架，支持spark，flume等批处理和流处理任务  
+
+
+
+docker和k8的一些概念和用法
+  docker
+    DOCKERFILE
+    docker command
+  
+  k8s
+    kubernetes/minikube
+    kubectl
+    resources
+      node
+      pod deployment statefulset daemonset
+      service nodeport loadbalance
+      namespace name label annotation
+      configmap
+      volumn
+      dns ingress
 
