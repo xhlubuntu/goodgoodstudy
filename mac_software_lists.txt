@@ -23,6 +23,7 @@ mac software lists
       jieba nltk gensim 
       tensorflow keras
       flask flask_restful graphene graphql
+      networkx 
     r rstudio
 
 
